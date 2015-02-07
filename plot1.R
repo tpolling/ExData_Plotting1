@@ -11,6 +11,6 @@ consumption$Date = as.Date(as.character(consumption$Date), format="%d/%m/%Y")
 
 # Histogram
 hist(consumption$Global_active_power, xlab="Global Active Power (kilowatts)", 
-     col="red")
+     col="red", main="Global Active Power")
 dev.copy(png, filename="plot1.png", width=480, height=480)
 dev.off()
